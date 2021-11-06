@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><p>Home</p></a>
+        <a href="./weather.html"><p style="color: #F4902A;">Weather</p></a>
+        <a href="./food.html"><p>Food</p></a>
+    </nav>
+    <div class="window">
+        <h1>ENTER CITY</h1>
+        <div>
+            <input type="text" name="city" id="city" onchange="getcity(this)">
+            <button id="submit">Search</button>
+        </div>
+        <h1 id="ans"></h1>
+        <img id="icon" src="" alt="">
+    </div>
+</body>
+<script src="./weather.js"></script>
+</html>

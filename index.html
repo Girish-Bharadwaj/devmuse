@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><p style="color: #F4902A;">Home</p></a>
+        <a href="./weather.html"><p>Weather</p></a>
+        <a href="./food.html"><p>Food</p></a>
+    </nav>
+    <div class="headingDiv">
+        <h1 class="heading">B I L L</h1>
+        <h1 class="heading">S P L I T</h1>
+    </div>
+    <div class="calculator">
+        <div class="left">
+            <p>Bill</p>
+                <div class="input-form">
+                    <img class="icon" src="./icon-dollar.svg" >
+                    <input class="form-input form-input-a" type="text" name="billamount" id="billamount" oninput="getamt(this)">
+                </div>
+            <p>Select tip%</p>
+            <div class="percentageTip">
+                <div>
+                    <span id="ptip1" class="ptip">05%</span>
+                    <span id="ptip2" class="ptip">10%</span>
+                    <span id="ptip3" class="ptip">15%</span>
+                </div>
+                <div>
+                    <span id="ptip4" class="ptip">25%</span>
+                    <span id="ptip5" class="ptip">50%</span>
+                    <input class="form-input-custom" type="text" placeholder="Custom" name="custom" id="custom" oninput="getCustom(this)">
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 75%;">
+                <p>Number of people</p>
+                <span class="alert">Can't be zero</span>
+            </div>
+            <div class="input-form">
+                <img class="icon" src="./icon-person.svg" >
+                <input  class="form-input form-input-p" type="text" name="numberofpeople" id="numberofpeople" oninput="getnump(this)">
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <div class="answer">
+                    <div>
+                        <p>Tip Amount
+                            <br>
+                            <span>/person</span>
+                        </p>
+                        
+                    </div>
+                    <div class="tip-answer">$0.00</div>
+                </div>
+                <div class="answer">
+                    <div>
+                        <p>Total Amount
+                            <br>
+                            <span>/person</span>
+                        </p>
+                        
+                    </div>
+                    <div class="tot-answer">$0.00</div>
+                </div>
+            </div>
+            <div class="reset" onclick="reset()">RESET</div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
