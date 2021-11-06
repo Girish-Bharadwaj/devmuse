@@ -23,7 +23,7 @@ let rname,calories,pic
                 "pic":pic
                 })
             }).
-            then((response)=>{console.log(response.json());window.location.href = "/food.html"})
+            then((response)=>{console.log(response.json());window.location.href = "/devmuse/food.html"})
 
             }
     else{
