@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Recipie name</label>
+          <input type="text" class="form-control" id="recipe" aria-describedby="emailHelp" placeholder="Enter Recipie" oninput="getrname(this)">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Calories</label>
+          <input type="text" class="form-control" id="Calories" aria-describedby="emailHelp" placeholder="Enter Calories" oninput="getcalories(this)">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Image url</label>
+          <input type="text" class="form-control" id="picUrl" aria-describedby="emailHelp" placeholder="Enter Image url" oninput="getPicurl(this)">
+        </div>
+        
+    </form>
+    <button class="btn btn-primary" id="add">Submit</button>
+</body>
+<script src="new.js"></script>
+</html>
