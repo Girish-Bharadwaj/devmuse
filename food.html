@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./food.css">
 </head>
 <body>
     <nav>
-        <a href="/"><p>Home</p></a>
+        <a href="/devmuse/"><p>Home</p></a>
         <a href="./weather.html"><p>Weather</p></a>
         <a href="./food.html"><p style="color: #F4902A;">Food</p></a>
     </nav>
+    <div class="list" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+        <div class="card" id="123" style="width: 18rem;">
+            <img class="card-img-top" src="https://static.dairypure.com/sites/default/files/branded/dairy_pure_1lf_gal.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Low fat (2%) milk</h5>
+              <p class="card-text">Calories: 121</p>
+              <button  class="btn btn-primary" onclick="update(this)">Update</button>
+              <button class="btn btn-danger" onclick="deleteele(this)">Delete</button>
+            </div>
+          </div>
+    </div>
 </body>
+<script src="./food.js"></script>
 </html>
